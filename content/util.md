@@ -1,0 +1,12 @@
+# Comandos
+- `docker run [imagem]` - verifica se a máquina possui a imagem passada por parâmetro e, caso não tenha, o Docker busca e baixa a imagem do Docker Hub (imagem é um conjunto de instruções para o Docker criar um container). Isso criará um container.
+- `docker run -it [imagem]` - integra o terminal da máquina ao terminal do container. Isso nos permite trabalhar dentro do container.
+- `exit` - sair do container.
+- `docker start [container id]` - executa novamente um container existente (sem integrar os terminais).
+- `docker start -a -i [container id']` - executa novamente um container com os terminais integrados.
+- `docker stop [container id]` - para o container.
+- `docker ps` - lista os containers sendo executados no momento.
+- `docker ps -a` - lista todos os containers, mesmo os não ativos no momento.
+- `docker rm [container id]` - remove o container.
+- `docker container prune` - remove todos os containers inativos.
+- `docker rmi [imagem]` - remove a imagem.
