@@ -1,6 +1,8 @@
 # Docker
 - Docker, Inc: empresa (antiga dorCloud).
 - Coleção de tecnologias para facilitar o deploy e a execução de uma aplicação.
+- O Docker possibilita configurar ambientes que são exatamente como um servidor de produção e permite que qualquer pessoa trabalhe no mesmo projeto com exatamente as mesmas configurações, independentemente do ambiente de host local. 
+- As configurações são descritas em arquivos simples facilmente aplicáveis pelo desenvolvedor.
 - Open source ([Github da Docker, Inc](https://github.com/docker)).
 
 ## Camadas de uma imagem
