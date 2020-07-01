@@ -1,4 +1,6 @@
 # Comandos
+
+## Docker run
 - `docker run [imagem]` - verifica se a máquina possui a imagem passada por parâmetro e, caso não tenha, o Docker busca e baixa a imagem do Docker Hub (imagem é um conjunto de instruções para o Docker criar um container). Isso criará um container e o deixará rodando.
 - `docker run -d [imagem]` - faz o mesmo processo do docker run sem atrelar os terminais.
 - `docker run -it [imagem]` - integra o terminal da máquina ao terminal do container. Isso nos permite trabalhar dentro do container.
@@ -6,6 +8,8 @@
 - `docker run -d -P [imagem]` - fará com que o Docker atribua uma porta aleatória ao site da imagem passada por parâmetro. A porta vai aparecer ao rodar o comando `docker ps`.
 - `docker run -d -p [porta-localhost]:[porta-container] [imagem]` - define a porta do localhost a ser atribuída a porta do container. 
 - `docker run -d -P -e AUTHOR=[variavel] [imagem]` - atribui uma variável de ambiente.
+
+## Containers e imagens
 - `exit` - sair do container.
 - `docker start [container id ou name]` - executa novamente um container existente (sem integrar os terminais).
 - `docker start -a -i [container id ou name']` - executa novamente um container com os terminais integrados.
@@ -18,4 +22,6 @@
 - `docker rmi [imagem]` - remove a imagem.
 - `docker port [container id ou name]` - mostra portas utilizadas pelo container.
 - `$ (comando)` - interpolação de comandos.
+
+## Volumes
 
