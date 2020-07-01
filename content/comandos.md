@@ -24,4 +24,7 @@
 - `$ (comando)` - interpolação de comandos.
 
 ## Volumes
+- `docker run -v [nome] [imagem]` - cria um container com um volume.
+- `docker inspect [container id]` - mostra a pasta local em que os dados serão salvos ("source" dentro de "mounts").
+- `docker run -v [pasta-destino]:[nome-volume] [imagem]` - indica a pasta na qual o volume deve ser salvo.
 

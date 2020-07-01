@@ -24,4 +24,6 @@ Os containers são criados e removidos rapidamente e facilmente.
 
 Volume de dados dentro do container, lugar para salvar os dados quando o container for removido. Quando criamos um volume, criamos uma pasta dentro do container e o apontamos para uma pasta no Docker Host.
 
+Podemos atrelar o volume com qualquer lugar, como banco de dados e código fonte.
+
 
