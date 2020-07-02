@@ -22,9 +22,20 @@
 - `docker rmi [imagem]` - remove a imagem.
 - `docker port [container id ou name]` - mostra portas utilizadas pelo container.
 - `$ (comando)` - interpolação de comandos.
+- `docker run -p [porta]:[porta-container] -v [diretorio-local]:[nome-volume] -w [pasta-rodar-comando] [imagem] [comando]`
+- `docker build -f [dockerfile] -t [nome-usuario/nome-imagem] [local-dockerfile]` - cria a imagem através do dockerfile e nomeia.
 
 ## Volumes
 - `docker run -v [nome] [imagem]` - cria um container com um volume.
 - `docker inspect [container id]` - mostra a pasta local em que os dados serão salvos ("source" dentro de "mounts").
 - `docker run -v [pasta-destino]:[nome-volume] [imagem]` - indica a pasta na qual o volume deve ser salvo.
+
+## Dockerfile
+- `FROM [imagem]` - imagem base.
+- `MAINTAINER [nome]` - quem criou a imagem.
+- `COPY [copia] [lugar]` - copia o conteúdo que deve estar dentro da imagem.
+- `WORKDIR [diretorio]` - diz o lugar em que devemos trabalhar.
+- `RUN [comando]` - rodar algum comando.
+- `ENTRYPOINT [comando]` - comando a ser executado quando o container for carregado.
+- `EXPOSE [porta]` - a porta em que a aplicação irá executar.
 

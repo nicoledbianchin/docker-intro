@@ -26,4 +26,10 @@ Volume de dados dentro do container, lugar para salvar os dados quando o contain
 
 Podemos atrelar o volume com qualquer lugar, como banco de dados e código fonte.
 
+## Dockerfile
+
+Arquivo de texto lido pelo docker para criar uma imagem (extensão .dockerfile ou o nome padrão Dockerfile). Cada instrução do Dockerfile gera uma nova camada da imagem.
+
+Cada camada (ou comando) ao rodar o `build` ganha um `id`, então caso for preciso alterar a imagem, basta alterar a camada, com as outras partes intermediárias já prontas.  
+
 
