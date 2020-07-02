@@ -38,4 +38,5 @@
 - `RUN [comando]` - rodar algum comando.
 - `ENTRYPOINT [comando]` - comando a ser executado quando o container for carregado.
 - `EXPOSE [porta]` - a porta em que a aplicação irá executar.
+- `ENV [variavel]=[valor]` - variáveis de ambiente.
 
