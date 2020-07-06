@@ -42,3 +42,6 @@
 - `EXPOSE [porta]` - a porta em que a aplicação irá executar.
 - `ENV [variavel]=[valor]` - variáveis de ambiente.
 
+## Redes
+- `docker network create --driver [rede-driver] [nome]` - cria um container através de um driver (`bridge`).
+- `docker run --name [nome] --network [rede] [imagem]` - associa o container a ser criado à rede.
