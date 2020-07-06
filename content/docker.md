@@ -32,4 +32,12 @@ Arquivo de texto lido pelo docker para criar uma imagem (extensão .dockerfile o
 
 Cada camada (ou comando) ao rodar o `build` ganha um `id`, então caso for preciso alterar a imagem, basta alterar a camada, com as outras partes intermediárias já prontas.  
 
+## Redes no Docker
+
+É comum separar as partes de uma mesma aplicação em mais de um container, para que cada container tenha apenas uma responsabilidade. Então, para a aplicação funcionar, os containers precisam se comunicar.
+
+Por padrão, no Docker já existe uma default network, ou seja, todos os containers criados funcionam na mesma rede por padrão (`bridge`).
+
+Na rede padrão os containers só podem se comunicar utilizando o IP gerado pelo próprio Docker. Podemos criar nossa própria rede e atribuir nomes para mapear a comunicação entre os containers da nossa aplicação.
+
 
