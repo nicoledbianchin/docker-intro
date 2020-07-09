@@ -44,4 +44,5 @@
 
 ## Redes
 - `docker network create --driver [rede-driver] [nome]` - cria um container através de um driver (`bridge`).
-- `docker run --name [nome] --network [rede] [imagem]` - associa o container a ser criado à rede.
+- `docker run -it --name [nome] --network [rede] [imagem]` - associa o container a ser criado à rede.
+- `hostname -i` - mostra o IP atribuído ao container (funciona apenas dentro do container).
