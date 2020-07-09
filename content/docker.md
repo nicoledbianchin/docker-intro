@@ -60,4 +60,9 @@ Lidando com múltiplos _containers_ simultaneamente.
 Quanto maior a aplicação, mais _containers_ precisamos. Isso torna o processo manual muito extenso e 
 suscetível a erros.
 
+![Exemplo de uma aplicação](./images/application.png)
+> Exemplo de uma aplicação
+
+O Docker Compose funciona seguindo um arquivo YAML (.yml), que descreve o processo de build.
+
 

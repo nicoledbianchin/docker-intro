@@ -23,6 +23,7 @@
 - `docker port [container id ou name]` - mostra portas utilizadas pelo container.
 - `$ (comando)` - interpolação de comandos.
 - `docker run -p [porta]:[porta-container] -v [diretorio-local]:[nome-volume] -w [pasta-rodar-comando] [imagem] [comando]`
+- `docker build -f [dockerfile]` - cria a imagem a partir do Docker file (deve estar na pasta do arquivo).
 - `docker build -f [dockerfile] -t [nome-usuario-docker/nome-imagem] [local-dockerfile]` - cria a imagem através do dockerfile e nomeia.
 - `docker push [imagem]` - coloca imagem criada no meu Docker Hub
 - `docker pull [imagem]` - somente baixa a imagem, sem fazer nenhum container.
