@@ -47,3 +47,14 @@
 - `docker network create --driver [rede-driver] [nome]` - cria um container através de um driver (`bridge`).
 - `docker run -it --name [nome] --network [rede] [imagem]` - associa o container a ser criado à rede.
 - `hostname -i` - mostra o IP atribuído ao container (funciona apenas dentro do container).
+
+## Docker Compose
+- `docker-compose build` - deve ser executado dentro da pasta do projeto.
+- `docker-compose up` - deve ser executado dentro da pasta do projeto após os serviços serem construídos. 
+Ele executa os passos descritos no docker-compose.yml.
+- `docker-compose up -d` - o mesmo comando, porém não fica mostrando os logs no terminal.
+- `docker-compose ps` - lista os serviços rodando.
+- `docker-compose down` - para os containers e os remove (quando o terminal não está trancado).
+
+**Obs.:** mesmo sendo serviços, ainda é possível usar todos os outros comandos de container. Podemos usar o nome do 
+container ou o nome do serviço. 

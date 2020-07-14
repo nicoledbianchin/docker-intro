@@ -65,4 +65,6 @@ suscetível a erros.
 
 O Docker Compose funciona seguindo um arquivo YAML (.yml), que descreve o processo de build.
 
+Para utilizar o Docker Compose, devemos colocar o arquivo de configuração (```docker-compose.yml```) na 
+raiz do projeto. Assim como o Dockerfile, é um arquivo de instruções para o Docker.
 
